@@ -10,16 +10,18 @@
 <body>
     <h1>Forms Demo</h1>
 
-    <form action="">
+    <form method="GET">
         <div>
-            <label for="username">Username</label>
-            <input type="text" id="username" placeholder="username">
+            <!--<label for="username">Username</label>-->
+            Username: <input type="text" id="username" placeholder="username" name="username">
         </div>
         <div>
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="password">
+            <input type="password" id="password" placeholder="password" name="password">
         </div>
-        <button>Register</button>
+        <!--<button>Register</button>-->
+        <input type="submit" value="Register">
+        <input type="reset">
     </form>
 
     <!-- Search Reddit -->
