@@ -37,6 +37,16 @@
         <input type="text" name="q">
         <button>Search Google</button>
     </form>
+
+    <script>
+
+        var myForm = document.querySelector('form');
+        myForm.addEventListener('submit', function(event){
+            //event.preventDefault();
+            var formData = document.querySelector('input').value;
+            alert(formData);
+        });
+    </script>
 </body>
 
 </html>

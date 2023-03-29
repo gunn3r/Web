@@ -3,11 +3,20 @@
 <head>
   <title>Layout Master</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <script type="text/javascript" src="../js/main.js" async></script>
 </head>
 <body>
   <div class="zone green">Header</div>
   <div class="zone red">Cover</div>
   <div class="zone blue">Project Grid</div>
   <div class="zone yellow">Footer</div>
+
+  <script>
+    var test = document.getElementsByClassName('zone red');
+    console.log(test);
+    var blueZone = document.querySelector('div');
+    console.log(blueZone);
+    blueZone.style.color = "blue";
+  </script>
 </body>
 </html>

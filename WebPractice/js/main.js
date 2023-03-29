@@ -23,3 +23,20 @@ function itemKeyPress(event) {
         buttonClicked();
     }
 }
+
+//Random number function practice  
+function randomInt(min, max){
+    var numOfValues = max - min + 1;
+    var randomNum = Math.random();
+    var randomVal = randomNum * numOfValues;
+    var roundedRandomVal = Math.floor(randomVal);
+    var finalNum = min + roundedRandomVal;
+
+    return finalNum;
+}
+
+//Anonymous function
+var greeting = function() {
+    var name = prompt("Please tell me your name", "");
+    console.log(`Hello ${name}. how are you today?`);
+}
