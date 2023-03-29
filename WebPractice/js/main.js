@@ -19,7 +19,10 @@ btn.addEventListener("click", buttonClicked);
 textB.addEventListener("keypress", itemKeyPress);
 
 function itemKeyPress(event) {
-    if(event.which === 13){
+    //alert(`Key ${event.key} button is pressed`)
+    //if(event.which === 13){
+    //updated event.which to event.key
+    if(event.key === 'Enter'){
         buttonClicked();
     }
 }

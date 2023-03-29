@@ -46,6 +46,21 @@
             var formData = document.querySelector('input').value;
             alert(formData);
         });
+
+        //Test mouse over/out event
+        var heading = document.querySelector('h1');
+        var box = document.querySelector('button');
+        box.addEventListener('mouseover', function(){
+            heading.innerHTML = "The mouse if over a button";
+        });
+
+        box.addEventListener('mouseout', function(){
+            heading.innerHTML = "The mouse has left the button";
+        });
+
+        heading.addEventListener('mouseover', function(){
+            heading.innerHTML = "Forms Demo";
+        });
     </script>
 </body>
 
